@@ -1,0 +1,41 @@
+Atividade python salario aumentos
+
+#salario ate 280 aumento de 20%
+
+#entre 280 e 700 aumento de 15
+
+#entre 700 e 1500 aumento de 10
+
+#salario de 1500 pra cima 5%
+
+#informar
+#salario antes
+#percentual de aumento aplicado
+#valor do aumento
+#novo salario
+
+salario = float(input("Digite seu salário: "))
+
+if salario <= 280:
+    percentual = "20%"
+    aumento = salario * 0.2
+    salario_aumentado = salario + aumento
+elif salario > 280 and salario <700:
+    percentual = "15%"
+    aumento = salario * 0.15
+    salario_aumentado = salario + aumento
+elif salario > 700 and salario > 1500:
+    percentual = "10%"
+    aumento = salario * 0.1
+    salario_aumentado = salario + aumento
+elif salario > 1500:
+    percentual = "5%"
+    aumento = salario * 0.05
+    salario_aumentado = salario + aumento
+    
+
+
+print(f"O seu salário antes era de {salario}")
+print(f"O percentual de aumento foi de {percentual}")
+print(f"O valor do seu aumento foi de {aumento}")
+print(f"O seu salário final é de {salario_aumentado}")

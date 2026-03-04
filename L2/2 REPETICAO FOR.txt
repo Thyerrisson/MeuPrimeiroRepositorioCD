@@ -1,0 +1,20 @@
+2 REPETICAO FOR
+
+#2. Integração: Repetição FOR + Operadores de Associação:
+#Exercício: Peça para o usuário digitar uma frase ou nome completo. 
+#Utilizando um
+#laço for, percorra cada caractere da string e verifique se ele é 
+#uma vogal (utilizando
+#o operador in "aeiouAEIOU"). Ao final, exiba o total de vogais encontradas.
+
+vogais = "aeiouAEIOU"
+
+frase = str(input("Digite uma frase: "))
+numvogais = 0
+
+for i in frase:
+    if i in vogais:
+        numvogais += 1
+        print (i)
+        
+print(f"O número de vogais em {frase} é {numvogais}")

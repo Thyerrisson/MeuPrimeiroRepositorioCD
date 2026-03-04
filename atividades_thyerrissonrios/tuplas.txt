@@ -1,0 +1,22 @@
+tuplas
+
+vendas_brutas = [
+    (101, "Monitor", 5, 1200.0), 
+    (102, "Mouse", 50, 80.0), 
+    (103, "Teclado", 8, 150.0), 
+    (104, "Case", 3, 50.0)
+]
+
+estoque_baixo = [item for item in vendas_brutas if item[2] < 10]
+
+valor_total_inventario = sum(item[2] * item[3] for item in vendas_brutas)
+
+taxa_reajuste = 1.10
+vendas_atualizadas = [
+    (item[0], item[1], item[2], round(item[3] * taxa_reajuste, 2)) 
+    for item in vendas_brutas]
+
+print(f"--- Relatório de Inventário ---")
+print(f"Produtos com estoque baixo: {estoque_baixo}")
+print(f"Valor total em estoque: R$ {valor_total_inventario}")
+print(f"Lista com reajuste de 10%: {vendas_atualizadas}")

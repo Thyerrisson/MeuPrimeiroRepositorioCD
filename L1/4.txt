@@ -1,0 +1,21 @@
+4
+
+#Exercício: Escreva um programa que peça ao usuário para digitar uma
+#senha. O programa deve continuar pedindo a senha (repetição) até que o
+#valor digitado seja igual a "python123". Quando acertar, exiba "Acesso
+#Permitido".
+
+
+senha = "python123"
+valor = ""
+
+while valor != "python123":
+    
+    valor = input("Digite a senha correta: ")
+
+    
+    if valor != "python123":
+        print("Acesso negado")
+    
+    else: 
+        print("Acesso permitido")

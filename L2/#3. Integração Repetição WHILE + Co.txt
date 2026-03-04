@@ -1,0 +1,40 @@
+#3. Integração: Repetição WHILE + Condicionais + Atribuição:
+#Exercício: Crie um programa que inicialize uma variável saldo = 500.0.
+#Exiba um
+#menu com as opções: (1) Depositar, (2) Sacar e (3) Sair.
+#• Se escolher depositar, peça o valor e some ao saldo.
+#• Se escolher sacar, verifique se há saldo suficiente; se sim, subtraia; se não,
+#avise "Saldo Insuficiente".
+#• O programa deve repetir (while) até que o usuário escolha a opção 3.
+
+opcao = "1", "2", "3"
+saldo = 0
+deposito = 0
+saque = 0
+
+escolha = 1
+
+while escolha != "3":
+    escolha = str(input("Escolha uma opção: "))
+
+
+    if escolha == "1":
+        deposito = float(input("Deposite seu dinheiro: "))
+        saldo = saldo + deposito
+        print(f"Seu saldo é de: {saldo}")
+      
+    elif escolha == "2":
+        sacar = int(input("Saque seu dinheiro: "))
+        if sacar > saldo:
+            print("Saldo insuficiente!")
+        else:
+            saldo = saldo - sacar
+            print(f"Seu saldo é de: {saldo}")
+    
+
+
+
+        
+
+        
+        

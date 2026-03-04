@@ -1,0 +1,16 @@
+atividade salario aumento que dobra
+ano = 1995
+salario = 1000
+aumento = 1.5 / 100
+
+
+while ano != 2025:
+    ano += 1
+    if ano == 1996:
+        salario = salario + (salario * aumento)
+    else:
+         aumento *= 2
+         salario = salario + (salario * aumento)
+
+
+salario = salario + aumento

@@ -1,0 +1,19 @@
+4. Integração: Identidade + Coleções Simples:
+
+#Crie uma lista dados_originais = [10, 20, 30].
+#1. Crie dados_referencia = dados_originais.
+#2. Crie dados_copia = [10, 20, 30].
+
+##Use o operador is para mostrar ao aluno que dados_referencia é o mesmo
+#objeto que o original, mas dados_copia não é, apesar de terem valores
+#idênticos.4
+
+dados_originais = [10,20,30]
+
+dados_referencia = dados_originais
+
+dados_copia = [10,20,30]
+
+print(dados_referencia is dados_originais)
+
+print(dados_copia is dados_originais)

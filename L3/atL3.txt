@@ -1,0 +1,30 @@
+atL3
+
+saldo_inicial = 1000
+checkpoint = saldo_inicial 
+
+print(checkpoint is saldo_inicial) 
+
+nome = ""
+while nome == "" or ("*" in nome or "#" in nome): 
+    nome = input("Coloque o nome do auditor: ")
+    
+    if "*" in nome or "#" in nome: 
+        print("Nome proibido! Tente novamente!") 
+    else:
+        print(f"Bem-vindo, {nome}")
+
+for i in range(4): 
+    valor = float(input(f"Transação - Digite o valor: ")) 
+    
+    if valor > 500.0: 
+        print("Transação de alto valor!")
+        
+    if valor < 0 and (valor) > saldo_inicial: 
+        print("Saldo insuficiente!") 
+    else:
+        saldo_inicial += valor 
+
+print(f"Saldo final: {saldo_inicial}") 
+
+print(saldo_inicial is checkpoint) 

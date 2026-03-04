@@ -1,0 +1,12 @@
+1.5 identidade 
+
+# Crie duas listas com os mesmos elementos, por exemplo: a = [1,
+#2] e b = [1, 2]. Crie uma terceira variável c = a. Use o operador de identidade
+#para verificar se a é o mesmo objeto que b e se a é o mesmo objeto que c.
+
+a = [1,2]
+b = [1,2]
+c = a
+
+print(a is b)
+print(a is c)

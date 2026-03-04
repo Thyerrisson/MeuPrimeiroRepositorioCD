@@ -1,0 +1,20 @@
+2 condicional
+
+# Exercício: Desenvolva um programa que receba a idade de um nadador e
+# classifique-o em uma das seguintes categorias:
+#• Infantil: 5 a 12 anos;
+#• Juvenil: 13 a 17 anos;
+#• Adulto: 18 anos ou mais;
+#• Inválido: Menor que 5 anos.
+
+
+idade = int(input("Digite sua idade: "))
+
+if idade >= 5 and idade <= 12:
+    print("Sua categoria é infantil")
+elif idade >=13 and idade <= 17:
+    print("Sua categoria é juvenil")
+elif idade >= 18:
+    print("Sua categoria é adulto")
+else:
+    print("Sua categoria é inválido")

@@ -1,0 +1,6 @@
+1.6 associação
+
+string = "Ciência de Dados"
+
+print("d" in string)
+print("Python" not in string)

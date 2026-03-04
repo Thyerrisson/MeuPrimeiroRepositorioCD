@@ -1,0 +1,26 @@
+EXERCICIO CAIXA REGISTRADORA 
+
+qtdProdutos = 0
+x = 0
+y = "none"
+print("---------------CAIXA REGISTRADORA------------------")
+print("DIGITE 0 PARA FINALIZAR AS COMPRAS")
+print("---------------------------------------------------")
+while y != 0:
+    
+    y = float(input("Digite o preço do produto: "))
+    if y == 0:
+            print("------Fim das compras------")
+    else:
+        if y < 0:
+            print("Valor invalido! Somente numeros positivos")
+        else:
+            x =  x + y
+            qtdProdutos += 1
+            print(f"Valor das compras atual: {x}")
+    
+    
+        
+        
+        
+print(f"o total da compra é {x} em {qtdProdutos} produtos.")

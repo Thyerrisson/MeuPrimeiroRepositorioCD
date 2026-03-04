@@ -1,0 +1,16 @@
+ex 1.2
+atribuição
+
+saldo = 1000
+deposito = 0
+saque = 0
+
+print(f"O seu saldo inicial é de: {saldo}")
+deposito += 500
+saldo = saldo + deposito
+print(f"O seu saldo agora é de: {saldo}")
+saldo -= 200
+saldo = saldo - saque
+print(f"O seu saldo agora é de: {saldo}")
+saldo *= 2
+print(f"O seu saldo final é de: {saldo}")

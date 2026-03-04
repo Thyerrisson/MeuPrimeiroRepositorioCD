@@ -1,0 +1,10 @@
+1.4 lógicos
+
+presenca = int(input("Digite a presença do aluno: "))
+media = int(input("Digite a média do aluno: "))
+
+if presenca >= 75 and media >= 7:
+    print("aprovado")
+else:
+    print("reprovado")
+

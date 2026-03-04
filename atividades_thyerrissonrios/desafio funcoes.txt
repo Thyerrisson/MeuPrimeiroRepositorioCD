@@ -1,0 +1,41 @@
+desafio funcoes
+
+def limpar_vendas(lista_bruta):
+    return [v for v in lista_bruta if 0 < v < 10000]
+
+def definir_status(media):
+    if media > 5000:
+        return "Alta Performance"
+    if 2000 <= media <= 5000:
+        return "Performance Estável"
+    return "Performance Crítica"
+
+filial = input("Digite o nome da Filial: ")
+vendas_temporarias = []
+
+print("Insira os valores das vendas (Digite 0 para encerrar):")
+while True:
+    valor = float(input("Valor da venda: R$ "))
+    if valor == 0:
+        break
+    vendas_temporarias.append(valor)
+
+vendas_validas = limpar_vendas(vendas_temporarias)
+
+faturamento = sum(vendas_validas)
+media_vendas = faturamento / len(vendas_validas) if vendas_validas else 0
+status = definir_status(media_vendas)
+
+print(f"RELATÓRIO: filial {filial}")
+print(f"Status: {status}")
+print(f"Faturamento Total: R$ {faturamento:,.2f}")
+print(f"Média por Venda: R$ {media_vendas:,.2f}")
+print("Listagem de Vendas Válidas:")
+
+i = 1
+for venda in vendas_validas:
+    print(f"{i} R$ {venda}")
+    i += 1
+
+if not vendas_validas:
+    print("Nenhuma venda válida registrada.")
